@@ -2,9 +2,9 @@ import { Ship, ShipSummary } from '../Types';
 
 const URL = 'https://api.spacexdata.com/v4/rockets';
 
-export const fetchShips = async (): Promise<any> => {
+export const fetchShips = async (): Promise<ShipSummary[]> => {
 	const res = await fetch(URL);
-	const json = await res.json();
+	const json: Ship[] = await res.json();
 
 	const shipArr = json.map(
 		(ship: Ship): ShipSummary => ({
