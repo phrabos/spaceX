@@ -10,7 +10,7 @@ const ShipList = ({ shipsArray }: ShipListProps): JSX.Element => (
 		<ul aria-label="rocket-list">
 			{shipsArray.map((ship: ShipSummary) => (
 				<section key={ship.id}>
-					<li>{ship.name}</li>
+					<li style={{ listStyle: 'none' }}>{ship.name}</li>
 					<img style={{ width: '300px' }} src={ship.image} alt={ship.name} />
 				</section>
 			))}
