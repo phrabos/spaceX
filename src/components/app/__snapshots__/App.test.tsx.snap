@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnimalCross container renders a list of rockets on the page 1`] = `
+<ul
+  aria-label="rocket-list"
+>
+  <section>
+    <li>
+      Falcon 1
+    </li>
+    <img
+      alt="Falcon 1"
+      src="https://imgur.com/azYafd8.jpg"
+      style="width: 300px;"
+    />
+  </section>
+  <section>
+    <li>
+      Falcon 9
+    </li>
+    <img
+      alt="Falcon 9"
+      src="https://farm4.staticflickr.com/3955/32915197674_eee74d81bb_b.jpg"
+      style="width: 300px;"
+    />
+  </section>
+  <section>
+    <li>
+      Falcon Heavy
+    </li>
+    <img
+      alt="Falcon Heavy"
+      src="https://farm5.staticflickr.com/4645/38583830575_3f0f7215e6_b.jpg"
+      style="width: 300px;"
+    />
+  </section>
+  <section>
+    <li>
+      Starship
+    </li>
+    <img
+      alt="Starship"
+      src="https://live.staticflickr.com/65535/48953946911_e60c5bcc5c_b.jpg"
+      style="width: 300px;"
+    />
+  </section>
+</ul>
+`;

@@ -7,10 +7,10 @@ type ShipListProps = {
 
 const ShipList = ({ shipsArray }: ShipListProps): JSX.Element => (
 	<>
-		<ul>
+		<ul aria-label="rocket-list">
 			{shipsArray.map((ship: ShipSummary) => (
-				<section>
-					<li key={ship.id}>{ship.name}</li>
+				<section key={ship.id}>
+					<li>{ship.name}</li>
 					<img style={{ width: '300px' }} src={ship.image} alt={ship.name} />
 				</section>
 			))}
