@@ -1,1 +1,1 @@
-# List and details of SpaceX ships
+# List and details of SpaceX ships deployed on AWS Amplify
