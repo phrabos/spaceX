@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ShipSummary } from '../../Types';
 
 type ShipListProps = {
@@ -9,10 +10,22 @@ const ShipList = ({ shipsArray }: ShipListProps): JSX.Element => (
 	<>
 		<ul aria-label="rocket-list">
 			{shipsArray.map((ship: ShipSummary) => (
-				<section key={ship.id}>
-					<li style={{ listStyle: 'none' }}>{ship.name}</li>
-					<img style={{ width: '300px' }} src={ship.image} alt={ship.name} />
-				</section>
+				<Link
+					to={`/${ship.id}`}
+					key={ship.id}
+					style={{ textDecoration: 'none', color: 'white' }}
+				>
+					<li
+						style={{
+							listStyle: 'none',
+							display: 'flex',
+							flexDirection: 'column',
+						}}
+					>
+						{ship.name}
+						<img width="300px" src={ship.image[0]} alt={ship.name} />
+					</li>
+				</Link>
 			))}
 		</ul>
 	</>

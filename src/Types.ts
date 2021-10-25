@@ -101,5 +101,7 @@ type Payload = {
 export type ShipSummary = {
 	id: string;
 	name: string;
-	image: string;
+	image: string[];
+	launchCost: number;
+	description: string;
 };
